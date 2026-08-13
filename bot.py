@@ -457,6 +457,8 @@ def run():
 Thread(target=run).start()
 
 if __name__ == "__main__":
-  token = os.getenv("DISCORD_TOKEN")
-  if token:
-    bot.run(token)
+    token = os.getenv("DISCORD_TOKEN")
+    if token:
+        bot.run(token)
+    else:
+        print("Erreur : Aucun token trouvé !")
